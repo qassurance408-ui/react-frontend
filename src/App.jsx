@@ -9,7 +9,7 @@ function App() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch(`${API_URL}/api/hello`)
+    fetch(`${API_URL}/hello`)
       .then((res) => {
         if (!res.ok) throw new Error(`Request failed: ${res.status}`);
         return res.json();
