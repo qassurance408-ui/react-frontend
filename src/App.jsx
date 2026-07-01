@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 
 // Set VITE_API_URL as a build-time env var in AletCloud once the backend
 // is deployed. If it isn't picked up, edit the fallback below and push again.
-const API_URL = import.meta.env.VITE_API_URL || 'ENV_VAR_NOT_SET';
+const API_URL = import.meta.env.VITE_API_URL || 'https://fullstack-react-node.app.aletcloud.com/api';
 
 function App() {
   const [data, setData] = useState(null);
